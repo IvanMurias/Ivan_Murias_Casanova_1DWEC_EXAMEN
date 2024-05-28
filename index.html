@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Control de Inventario</title>
+    <title>Lista de tareas</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -12,14 +12,22 @@
     <div class="main_container">
         <h1>Lista de tareas</h1>
         <div class="task_list_container">
-            <button id="btn_create" class="btn_create">Agregar una tarea</button>
-            <ol id="listaTareas">
-            </ol>
+            <div class="btn_create_wrapper">
+                <button id="btn_create" class="btn_create">Agregar una tarea</button>
+            </div>
+            <div class="input_wrapper">
+                <input type="text" id="taskInput" class="taskInput" placeholder="Introduzca una tarea">
+            </div>
+            <div class="taskListDiv">
+                <ol id="taskList">
+                </ol>
+            </div>
         </div>
         <div class="btn_delete_container">
             <button id="btn_cleanse" class="btn_cleanse">Limpiar Todo</button>
         </div>
     </div>
+    <script src="./scripts/app.js" type="module"></script>
 </body>
 
 </html>
