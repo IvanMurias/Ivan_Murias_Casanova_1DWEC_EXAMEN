@@ -7,7 +7,6 @@ export const renderAll = () => {
     cleanseImputs();
     taskList.forEach((task) => {
         renderTask(task);
-
     });
 }
 

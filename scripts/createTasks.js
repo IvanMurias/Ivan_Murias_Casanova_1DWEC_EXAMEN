@@ -14,7 +14,7 @@ inputTask.addEventListener("keyup", (event) => {
     if(event.key === "Enter"){
         taskAdd();
     }
-})
+});
 
 function taskAdd() {
     taskPush()
